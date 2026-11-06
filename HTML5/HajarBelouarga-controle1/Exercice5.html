@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <fieldset>
+      <legend> Informations personnelles</legend>
+       <label for="nom">Nom :</label>
+       <input type="text" name="nom" id="nom" placeholder="Saisir votre nom" required> <br> <br>
+       <label for="email">E-mail :</label>
+       <input type="email" name="email" id="email" placeholder="exemple@gmail.com" required> <br><br>
+       <label for="tel">Téléphone :</label>
+       <input type="tel" name="tel" id="tel" placeholder="Saisir votre téléphone" required> <br> <br>
+       <label for="date">Date de naissance :</label>
+       <input type="date" name="date" id="date"> <br> <br>
+       <label for="password">Mot de passe :</label>
+       <input type="password" id="password" name="password" required minlength="6"><br> <br>
+       <label for="nationalité">Nationalité :</label> <br> <br>
+       <input type="checkbox" name="Ma" id="Ma" checked>
+       <label for="Ma">Marocaine</label>
+       <input type="checkbox" name="Fr" id="Fr">
+       <label for="Fr">Française</label>
+       <input type="checkbox" name="Esp" id="Esp">
+       <label for="Esp">Espagnole</label>
+       <input type="checkbox" name="autre" id="autre">
+       <label for="autre">Autre</label> <br><br>
+       <label for="ville">Ville :</label>
+       <select>
+          <option >--Choisir une ville--</option>
+          <option value="marrakech">Marrakech</option>
+          <option value="tanger">Tanger</option>
+          <option value="rabat">Rabat</option>
+          <option value="agadir">Agadir</option>
+          <option value="casa">Casablanca</option>
+       </select> <br> <br>
+       <label for="sexe">Genre :</label>
+       <input type="radio" name="M" id="M">
+       <label for="M">Masculin</label>
+       <input type="radio" name="F" id="F">
+       <label for="F">Féminin</label> <br> <br>
+       <label for="photo">Photo de Profil :</label>
+       <input type="file" name="photo" id="photo"> <br> <br>
+       <input type="submit" value="S'inscrire">
+       <input type="reset" value="Rénitialiser">
+    </fieldset>
+</body>
+</html>

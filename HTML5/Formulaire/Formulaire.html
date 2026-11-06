@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="traitement.php" method="post">
+    <table border="1" cellpadding="20" >
+      <tr>
+        <td>
+  <h1>Formulaire</h1>
+  <label for="Nom">Nom :</label> <br>
+  <input type="text" placeholder="Votre nom complet" name="Nom" id="Nom"> <br> <br>
+  <label for="Email">Email :</label> <br>
+  <input type="text" placeholder="votremail@example.com" name="Email" id="Email"> <br> <br>
+  <label for="mdp">Mot de passe :</label> <br>
+  <input type="password" id="mdp" name="mdp" ><br> <br>
+  <label for="telephone">Téléphone :</label> <br>
+  <input type="tel" id="telephone" name="telephone" placeholder="0123456789" pattern="{0-9}{10}" > <br> <br>
+  <label for="site">Site Web :</label> <br>
+  <input type="url" name="site" placeholder="https://example.com" id="site"><br> <br>
+  <label for="date">Date de naissance :</label> <br>
+  <input type="date" id="date" name="date"> <br> <br>
+  <label for="rdv">Date et heure de rendez-vous :</label> <br>
+  <input type="datetime-local" name="rdv" id="rdv" > <br> <br>
+  <label for="age">Age :</label> <br> 
+  <input type="number" name="age" id="age" min="18"> <br> <br>
+  <label for="recherche">Recherche :</label> <br>
+  <input type="search" name="recherche" id="recherche" placeholder="Recherchez ici...."> <br> <br>
+  <label for="couleur"> Couleur préférée :</label> <br>
+  <input type="color" id="couleur" name="couleur">
+  </td>
+  <td>
+  <label for="niveau">Volume sonore :</label><br>
+  <input type="range" id="niveau" name="niveau" min="0" max="100" step="5"> <br> <br>
+  <label for="checkbox">Langues parlées :</label> <br>
+  <input type="checkbox" name="fr" id="fr" value="Français"> 
+  <label for="fr">Français</label> <br>
+  <input type="checkbox" name="ang" id="ang" value="Anglais"> 
+  <label for="ang">Anglais</label> <br>
+  <input type="checkbox" name="esp" id="esp" value="Espagnol">
+  <label for="esp">Espagnol</label> <br> <br>
+  <label for="sexe">Sexe :</label> <br>
+  <input type="radio" name="sexe" id="h" value="Homme">
+  <label for="h">Homme</label> <br>
+  <input type="radio" name="sexe" id="f" value="F">
+  <label for="f">Femme</label> <br> <br>
+  <label for="pays">Pays :</label> <br>
+  <select name="pays" id="pays">
+    <option value="Ma">Maroc</option>
+    <option value="fr">France</option>
+    <option value="ca">Canada</option>
+    <option value="esp">Espagne</option>
+    <option value="por">Portogale</option> 
+  </select> <br> <br>
+  <label for="message">Commentaires :</label> <br>
+  <textarea  name="message" rows="5" cols="20" placeholder="Entrez vos commentaires ici..."></textarea> <br> <br>
+  <input type="submit" value="Envoyer">
+  </table>
+  </form>
+</body>
+</html>
