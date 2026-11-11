@@ -1,0 +1,12 @@
+input:focus{
+    color: blue;
+    background-color: lightgoldenrodyellow;
+}
+.groupe:focus-within{
+    color: white;
+    background-color: green;
+}
+button:focus-visible{
+    color: white;
+    background-color: purple;
+}
